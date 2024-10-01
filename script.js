@@ -73,6 +73,16 @@ function playGame() {
     // Play round
     playRound(humanSelection, computerSelection);
   }
+  if (computerScore > humanScore){
+    console.log(`The ending score was: computer:${computerScore} and You:${humanScore}`);
+    console.log("Computer won the game!");
+  } else if (humanScore > computerScore){
+    console.log(`The ending score was: computer:${computerScore} and You:${humanScore}`);
+    console.log("You won the game!");
+  } else {
+    console.log(`The ending score was: computer:${computerScore} and You:${humanScore}`);
+    console.log("The game ended on a Tie!!");
+  }
 }
 
 // Llamar a la función playGame
